@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #000000;
+}
+
+.about{
+    color: #bd5555;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    color: #333333;
+}
+
+.link-container {
+    color: blue;
+}
+
+h1:hover {
+    color: #bd5555;
+}
+
+#name {
+    color: #0000ff;
+}
+
+#form-group {
+    margin-bottom: 20px;
+}
+
+.personal-age {
+    background-color: #bd5555;;
+}
