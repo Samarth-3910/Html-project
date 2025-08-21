@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="form-title">Job Application</h2>
+        <form id="personalForm">
+            <div class="section-container">
+                <h3 class="section-title">Personal Information</h3>
+                
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+            </div>
+
+            <div class="section-container">
+                <h3 class="section-title">Job Details</h3>
+                
+                <div class="form-group">
+                    <label for="position">Position Applied For</label>
+                    <select id="position" name="position" required>
+                        <option value="">Select a position</option>
+                        <option value="software-developer">Software Developer</option>
+                        <option value="frontend-developer">Frontend Developer</option>
+                        <option value="backend-developer">Backend Developer</option>
+                        <option value="fullstack-developer">Full Stack Developer</option>
+                        <option value="web-designer">Web Designer</option>
+                        <option value="ui-ux-designer">UI/UX Designer</option>
+                        <option value="project-manager">Project Manager</option>
+                        <option value="data-analyst">Data Analyst</option>
+                        <option value="marketing-specialist">Marketing Specialist</option>
+                        <option value="sales-representative">Sales Representative</option>
+                        <option value="customer-support">Customer Support</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="experience">Years of Experience</label>
+                    <input type="number" id="experience" name="experience" min="0" max="50" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="coverLetter">Cover Letter</label>
+                    <textarea id="coverLetter" name="coverLetter" placeholder="Please write your cover letter here..." rows="8" required></textarea>
+                </div>
+            </div>
+            
+            <div class="section-container">
+                <h3 class="section-title">Availability</h3>
+                
+                <div class="form-group">
+                    <label for="startDate">Available Start Date</label>
+                    <input type="date" id="startDate" name="startDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Willing to Relocate</label>
+                    <div class="radio-group">
+                        <input type="radio" id="relocateYes" name="relocate" value="yes" required>
+                        <label for="relocateYes">Yes</label>
+                        
+                        <input type="radio" id="relocateNo" name="relocate" value="no" required>
+                        <label for="relocateNo">No</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>
