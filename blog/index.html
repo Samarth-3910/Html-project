@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <h1 class="site-title">Welcome to Samarth's Blog!</h1>
+            <p class="site-description">I am a full stack developer who is learning HTML, CSS, Javascript and more.</p>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a> | 
+                <a href="/about" class="nav-link">About</a> | 
+                <a href="/contact" class="nav-link">Contact</a> | 
+                <a href="/blog" class="nav-link">Blogs</a>
+            </div>
+            <hr>
+        </nav>
+    </header>
+
+    <section id="about" class="about-section">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">Hello! I'm Samarth, a passionate full stack developer. I love creating web applications and learning new technologies. In my free time, I enjoy reading tech blogs and experimenting with code.</p>
+        <img src="profile.jpeg" class="profile-image" width="100" height="100" alt="Samarth's Photo">
+    </section>
+    <hr>
+
+    <section id="blog-posts" class="blog-section">
+        <h1 class="section-title">Latest Blog Posts</h1>
+        <article class="blog-post">
+            <h3 class="post-title">My Journey with Cloud Computing</h3>
+            <p class="post-content">I started working on AWS and gradually explored <a href="https://www.terraform.io">Terraform</a>, <a href="https://www.docker.com">Docker</a>, a few years ago. It has been an exciting journey learning how to deploy and manage applications in the cloud.</p>
+        </article>
+
+        <div class="tools-section">
+            <h3 class="tools-title">Key Tools I Use:</h3>
+            <ul class="tools-list">
+                <li class="tool-item">AWS</li>
+                <li class="tool-item">Docker</li>
+                <li class="tool-item">Terraform & CloudFormation</li>
+                <li class="tool-item">Kubernetes</li>
+                <li class="tool-item">GCP</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="tips" class="tips-section">
+        <h2 class="section-title">Tips for Beginners in Programming</h2>
+        <p class="tips-content">Start with the basics, practice regularly, and don't be afraid to ask for help. Join coding communities and work on real projects to enhance your skills.</p>
+        
+        <h3 class="languages-title">Languages to start:</h3>
+        <ol class="languages-list">
+            <li class="language-item">Python</li>
+            <li class="language-item">JavaScript</li>
+            <li class="language-item">HTML & CSS</li>
+            <li class="language-item">Java</li>
+            <li class="language-item">C++</li>
+        </ol>
+    </section>
+    <hr>
+
+    <section id="training" class="training-section">
+        <h2 class="section-title">Upcoming Training Schedules</h2>
+        <table class="training-table">
+            <tr>
+                <th>Course</th>
+                <th>Date</th>
+                <th>Duration</th>
+            </tr>
+            <tr class="table-row">
+                <td>Full Stack Development</td>
+                <td>July 1, 2024</td>
+                <td>3 Months</td>
+            </tr>
+            <tr class="table-row">
+                <td>Cloud Computing Basics</td>
+                <td>August 15, 2024</td>
+                <td>2 Months</td>
+            </tr>
+            <tr class="table-row">
+                <td>Data Science Fundamentals</td>
+                <td>September 10, 2024</td>
+                <td>4 Months</td>
+            </tr>
+        </table>
+    </section>
+    <hr>
+
+    <section id="contact" class="contact-section">
+        <h1 class="section-title">Contact Me</h1>
+        <div id="contact-form" class="contact-form" action="/submit" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+            <br>
+            
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" class="form-textarea" rows="4" cols="50"></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Send</button>
+        </form>
+    </section>
+    <hr>
+    <p>@ 2023 Samarth</p>
+</body>
+</html>
